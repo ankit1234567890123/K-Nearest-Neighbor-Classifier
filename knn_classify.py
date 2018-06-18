@@ -99,5 +99,5 @@ if __name__ == '__main__':
         if actual_class in tied_classes:
            accuracy = 1 / len(tied_classes)
            total_accuracy += accuracy
-        print(str(test_index) + ':  ' + str(accuracy))
+        print(str(test_index) + ':  predicted-' + str(tied_classes[0]) + ', actual-' + str(actual_class))
     print('classification accuracy= ' + str(total_accuracy / test_rows))
